@@ -40,7 +40,8 @@ class MainActivity : ComponentActivity() {
 
 //font mulish
 val mulish = FontFamily(
-    Font(R.font.mulish_medium, FontWeight.Normal),
+    Font(R.font.mulish_bold, FontWeight.Normal),
+    Font(R.font.mulish_medium, FontWeight.Medium),
     Font(R.font.mulish_extra_light, FontWeight.ExtraLight)
 )
 
