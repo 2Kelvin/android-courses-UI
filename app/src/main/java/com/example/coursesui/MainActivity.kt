@@ -10,6 +10,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Search
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
@@ -49,7 +50,6 @@ val mulish = FontFamily(
 fun CoursesUI() {
     Column(
         Modifier
-            //.padding(start = 15.dp, end = 15.dp)
             .fillMaxSize()
             .background(colorResource(R.color.bg_purple))
     ) {
@@ -75,7 +75,9 @@ fun CoursesUI() {
                     color = Color.White
                 )
             }
-            Column() {
+            Column(
+                verticalArrangement = Arrangement.Center
+            ) {
                 Card(
                     shape = CircleShape,
                     backgroundColor = colorResource(R.color.search_purple)
@@ -85,8 +87,8 @@ fun CoursesUI() {
                         contentDescription = null,
                         tint = Color.White,
                         modifier = Modifier
-                            .padding(15.dp)
-                            .size(30.dp)
+                            .padding(7.dp)
+                            .size(40.dp)
                     )
                 }
             }
